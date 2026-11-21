@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>العقارات في مدينة السادات | وسيط</title>
+  <meta name="description" content="تصفح العقارات التجريبية للبيع والإيجار في مدينة السادات حسب المنطقة والسعر والمساحة.">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layouts/public.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/property-cards.css">
+  <link rel="stylesheet" href="../css/pages/properties.css">
+  <script type="module" src="../js/pages/properties.js"></script>
+</head>
+<body>
+<a class="w-skip" href="#main-content">انتقل إلى المحتوى</a>
+<div data-component="components/public/header.html"></div>
+<main id="main-content" class="w-listings" tabindex="-1">
+  <section class="w-listings-hero">
+    <div class="w-container">
+      <nav class="w-breadcrumbs" aria-label="مسار التنقل"><a href="../index.html">الرئيسية</a><svg class="w-icon" aria-hidden="true"><use data-icon="public-arrow"></use></svg><span aria-current="page">تصفح العقارات</span></nav>
+      <h1>العقارات في مدينة السادات</h1>
+      <p>دور على العقار المناسب ليك حسب المنطقة والسعر والمساحة. مدينة السادات، المنوفية، مصر.</p>
+      <form id="quick-search" class="w-listings-search" aria-label="البحث عن عقار" novalidate>
+        <div class="w-listings-search-top">
+          <div class="w-listings-segmented" role="group" aria-label="نوع المعاملة السريع"><button type="button" data-quick-transaction="sale" aria-pressed="false">بيع</button><button type="button" data-quick-transaction="rent" aria-pressed="false">إيجار</button></div>
+          <label class="w-field w-listings-keyword"><span class="w-sr-only">كلمة البحث</span><span class="w-search"><svg class="w-icon" aria-hidden="true"><use data-icon="public-search"></use></svg><input name="q" type="search" maxlength="200" placeholder="ابحث في عنوان العقار أو وصفه" aria-label="كلمة البحث"></span></label>
+        </div>
+        <div class="w-listings-search-fields">
+          <label class="w-field">نوع العقار<select name="property_type_id"><option value="">كل العقارات</option><option value="__multiple" disabled>أنواع متعددة</option></select></label>
+          <label class="w-field">الحي أو المنطقة<select name="area_id"><option value="">كل المناطق</option><option value="__multiple" disabled>مناطق متعددة</option></select></label>
+          <div class="w-listings-quick-price"><span>نطاق السعر</span><button class="w-listings-price-link" type="button" id="edit-price"><span id="quick-price-label">أي سعر</span><svg class="w-icon" aria-hidden="true"><use data-icon="public-chevron"></use></svg></button></div>
+          <button class="w-button w-button--primary" type="submit"><svg class="w-icon" aria-hidden="true"><use data-icon="public-search"></use></svg>ابحث عن عقارك</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="w-listings-section">
+    <div class="w-container">
+      <div id="location-warning" class="w-listings-notice" role="status" hidden></div>
+      <div class="w-listings-mobile-bar"><button class="w-button w-button--secondary" data-open-dialog="filter-dialog" aria-controls="filter-dialog" aria-expanded="false"><svg class="w-icon" aria-hidden="true"><use data-icon="public-filter"></use></svg>الفلاتر <span data-filter-count>0</span></button><span data-mobile-results>جارٍ التحميل…</span></div>
+      <div class="w-listings-layout">
+        <div id="filter-desktop"><div data-component="components/public/property-filters.html"></div></div>
+        <section class="w-listings-results" aria-labelledby="results-title">
+          <div class="w-listings-results-head">
+            <div><h2 id="results-title" tabindex="-1">نتائج البحث</h2><p id="results-count" role="status">جارٍ تحميل العقارات…</p></div>
+            <div class="w-listings-controls">
+              <label><span class="w-sr-only">ترتيب النتائج</span><select id="sort-order" aria-label="ترتيب النتائج"><option value="newest">الأحدث</option><option value="price_asc">الأقل سعرًا</option><option value="price_desc">الأعلى سعرًا</option><option value="area_desc">الأكبر مساحة</option></select></label>
+              <div class="w-listings-view" role="group" aria-label="طريقة عرض النتائج"><button type="button" data-view="grid" aria-label="شبكة" aria-pressed="true">▦</button><button type="button" data-view="list" aria-label="قائمة" aria-pressed="false">☷</button></div>
+            </div>
+          </div>
+          <p id="search-summary" class="w-listings-summary"></p>
+          <div class="w-listings-applied" id="active-filters" aria-label="الفلاتر المطبقة"></div>
+          <p id="sort-notice" class="w-listings-notice" role="status" hidden></p>
+          <p id="results-error" class="w-listings-error" role="alert" hidden></p>
+          <div id="property-results" class="w-property-grid w-listings-grid" aria-busy="true"><p>جارٍ تحميل العقارات التجريبية…</p></div>
+          <div id="empty-results" class="w-empty" hidden><span class="w-empty-symbol"><svg class="w-icon" aria-hidden="true"><use data-icon="public-search"></use></svg></span><h3 id="empty-title"></h3><p id="empty-copy"></p><button class="w-button w-button--primary" data-reset>مسح كل الفلاتر</button></div>
+          <div id="load-error" class="w-load-error" role="alert" hidden><p>تعذّر تحميل العقارات. تحقّق من الاتصال ثم أعد المحاولة.</p><button class="w-button w-button--secondary" id="retry-data">إعادة المحاولة</button></div>
+          <nav class="w-pagination w-listings-pagination" id="pagination" aria-label="صفحات نتائج البحث"></nav>
+          <p class="w-listings-demo-note">العقارات بيانات وهمية والصور توضيحية. المميزات وطرق الدفع أمثلة تجريبية فقط.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+<dialog class="w-modal w-listings-filter-dialog" id="filter-dialog" aria-labelledby="filter-title"><div id="filter-mobile"></div></dialog>
+<div data-component="components/public/footer.html"></div>
+<div data-component="components/public/property-card.html"></div>
+<div data-component="components/public/demo-dialog.html"></div>
+<noscript><p class="w-load-error">فعّل جافاسكريبت لتحميل العقارات واستخدام الفلاتر.</p></noscript>
+</body>
+</html>

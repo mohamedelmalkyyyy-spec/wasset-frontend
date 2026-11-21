@@ -1,0 +1,17 @@
+<template id="property-card-template">
+  <article class="w-property-card">
+    <div class="w-property-image">
+      <img data-card-image loading="lazy" width="600" height="400" alt="">
+      <span class="w-property-image-fallback" hidden>الصورة غير متاحة</span>
+      <span class="w-badge" data-card-transaction></span>
+      <button class="w-favorite" type="button" data-card-favorite aria-label="المفضلة"><svg class="w-icon" width="20" height="20" aria-hidden="true"><use data-icon="public-heart"></use></svg></button>
+    </div>
+    <div class="w-property-content">
+      <div class="w-owner-row"><a data-card-advertiser></a><span class="w-verified-dot" data-card-verified aria-label="معلن موثّق"><svg class="w-icon" width="11" height="11" aria-hidden="true"><use data-icon="public-check"></use></svg></span><span class="w-property-category" data-card-category></span></div>
+      <h3><a data-card-title></a></h3>
+      <p class="w-place"><svg class="w-icon" width="16" height="16" aria-hidden="true"><use data-icon="public-location"></use></svg><span data-card-location></span></p>
+      <div class="w-property-meta"><span><svg class="w-icon" width="17" height="17" aria-hidden="true"><use data-icon="public-area"></use></svg><span data-card-size></span></span><span data-card-specs></span></div>
+      <div class="w-property-bottom"><strong data-card-price></strong><a data-card-details>عرض التفاصيل <svg class="w-icon" width="16" height="16" aria-hidden="true"><use data-icon="public-arrow"></use></svg></a></div>
+    </div>
+  </article>
+</template>

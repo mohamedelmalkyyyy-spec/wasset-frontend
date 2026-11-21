@@ -1,0 +1,17 @@
+<form id="property-filters" class="w-listings-filters" aria-label="الفلاتر المتقدمة" novalidate>
+  <div class="w-listings-filter-head"><h2 id="filter-title">فلترة النتائج</h2><button class="w-icon-button w-listings-close" type="button" data-close-dialog aria-label="إغلاق الفلاتر"><svg class="w-icon" aria-hidden="true"><use data-icon="public-close"></use></svg></button></div>
+  <fieldset class="w-listings-filter-block " data-fieldset="listing_type"><legend>نوع المعاملة</legend><div data-options="listing_type" class="w-listings-checks"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="category_id"><legend>نوع العقار</legend><div data-options="category_id" class="w-listings-checks"></div></fieldset>
+  <details class="w-listings-filter-block"><summary>نوع الوحدة</summary><div data-options="property_type_id" class="w-listings-checks"></div></details>
+  <details class="w-listings-filter-block"><summary>الحي أو المنطقة</summary><div data-options="area_id" class="w-listings-checks"></div></details>
+  <fieldset class="w-listings-filter-block"><legend>نطاق السعر</legend><div class="w-listings-range"><label>من<input name="min_price" inputmode="decimal" type="text" aria-label="السعر الأدنى (جنيه)" aria-describedby="error-min_price"><span class="w-listings-error" id="error-min_price"></span></label><label>إلى<input name="max_price" inputmode="decimal" type="text" aria-label="السعر الأقصى (جنيه)" aria-describedby="error-max_price"><span class="w-listings-error" id="error-max_price"></span></label></div></fieldset>
+  <fieldset class="w-listings-filter-block"><legend>المساحة بالمتر المربع</legend><div class="w-listings-range"><label>من<input name="min_size" inputmode="decimal" type="text" aria-label="المساحة الدنيا (م²)" aria-describedby="error-min_size"><span class="w-listings-error" id="error-min_size"></span></label><label>إلى<input name="max_size" inputmode="decimal" type="text" aria-label="المساحة القصوى (م²)" aria-describedby="error-max_size"><span class="w-listings-error" id="error-max_size"></span></label></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="bedrooms"><legend>عدد غرف النوم</legend><div data-options="bedrooms" class="w-listings-numbers"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="bathrooms"><legend>عدد الحمامات</legend><div data-options="bathrooms" class="w-listings-numbers"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="finishing_type"><legend>مستوى التشطيب</legend><div data-options="finishing_type" class="w-listings-checks"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="amenity"><legend>مميزات العقار</legend><div data-options="amenity" class="w-listings-checks"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="payment_method"><legend>طريقة الدفع</legend><div data-options="payment_method" class="w-listings-checks"></div></fieldset>
+  <fieldset class="w-listings-filter-block " data-fieldset="rent_period"><legend>فترة الإيجار</legend><div data-options="rent_period" class="w-listings-checks"></div></fieldset>
+  <p class="w-listings-filter-help">اختر أكثر من قيمة داخل المجموعة لعرض أيٍّ منها. عدد الغرف للسكني فقط، والدفع للبيع فقط.</p>
+  <div class="w-listings-filter-actions"><p role="status" id="filter-live-count"></p><button class="w-button w-button--primary" type="submit">تطبيق الفلاتر</button><button class="w-listings-clear" type="button" data-reset>مسح كل الفلاتر</button></div>
+</form>

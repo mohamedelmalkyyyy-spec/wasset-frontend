@@ -1,0 +1,110 @@
+/* Source: App Listings/FilterSidebar and index.css, 900px/620px breakpoints. */
+.w-listings { background: #faf7f2; min-block-size: 70vh; }
+.w-listings-hero { background: var(--sand); padding-block-start: 38px; }
+.w-listings-hero h1 { font-size: 37px; margin-block: 20px 5px; }
+.w-listings-hero > .w-container > p { color: var(--muted); margin-block-end: 28px; }
+.w-listings-search { position: relative; transform: translateY(34px); padding: 18px; border: 1px solid #ead7beb3; border-radius: 18px; background: white; box-shadow: var(--shadow-large); }
+.w-listings-search-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-block-end: 10px; }
+.w-listings-segmented { display: flex; gap: 2px; padding: 4px; border-radius: 10px; background: var(--green-pale); }
+.w-listings-segmented button { padding: 8px 26px; min-block-size: 42px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); font-weight: 700; font-size: 13px; }
+.w-listings-segmented [aria-pressed=true] { color: var(--green-dark); background: white; box-shadow: 0 2px 8px #32322814; }
+.w-listings-keyword { inline-size: min(430px, 55%); }
+.w-listings-search-fields { display: grid; grid-template-columns: 1fr 1.1fr 1fr 1.15fr; gap: 10px; align-items: end; }
+.w-listings-search-fields .w-field, .w-listings-quick-price { font-size: 11px; font-weight: 600; color: var(--muted); }
+.w-listings-search-fields select, .w-listings-price-link { block-size: 49px; border: 1px solid var(--line); border-radius: 10px; background: var(--background); color: #55524d; font-size: 13px; }
+.w-listings-search-fields .w-button { min-block-size: 49px; }
+.w-listings-quick-price { display: grid; gap: 7px; min-inline-size: 0; }
+.w-listings-price-link { inline-size: 100%; padding-inline: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; text-align: start; }
+.w-listings-section { padding-block: 72px 90px; }
+.w-listings-layout { display: grid; grid-template-columns: 260px minmax(0,1fr); gap: 25px; align-items: start; }
+#filter-desktop { position: sticky; inset-block-start: 104px; }
+.w-listings-filters { background: white; border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; max-block-size: calc(100dvh - 120px); overflow-y: auto; scrollbar-width: thin; }
+.w-listings-filter-head { display: flex; align-items: center; justify-content: space-between; margin-block-end: 20px; }
+.w-listings-filter-head h2 { font-size: 18px; }
+.w-listings-close { display: none; }
+.w-listings-filter-block { min-inline-size: 0; margin: 0; padding: 16px 0; border: 0; border-block-start: 1px solid #f0ece7; }
+.w-listings-filter-block legend { float: inline-start; inline-size: 100%; padding: 0; margin-block-end: 10px; font-size: 11px; font-weight: 600; color: var(--muted); }
+.w-listings-filter-block > div { clear: both; }
+.w-listings-filter-block summary { font-size: 11px; font-weight: 600; color: var(--muted); padding-block: 5px; }
+.w-listings-filter-block[open] summary { margin-block-end: 12px; }
+.w-listings-checks { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 10px; }
+.w-listings-checks label { display: flex; align-items: center; gap: 7px; color: #55524e; font-size: 11px; min-block-size: 32px; cursor: pointer; }
+.w-listings-checks input { inline-size: 17px; block-size: 17px; flex-shrink: 0; accent-color: var(--green-dark); margin: 0; }
+.w-listings-range { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 7px; }
+.w-listings-range label { font-size: 10px; color: var(--muted); min-inline-size: 0; }
+.w-listings-range input { inline-size: 100%; min-inline-size: 0; block-size: 40px; padding-inline: 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--background); color: var(--text); font-size: 12px; }
+.w-listings-range input[aria-invalid=true] { border-color: #a34c3f; }
+.w-listings-numbers { display: flex; gap: 5px; }
+.w-listings-numbers label { position: relative; flex: 1; cursor: pointer; }
+.w-listings-numbers input { position: absolute; opacity: 0; inline-size: 100%; block-size: 100%; margin: 0; cursor: pointer; }
+.w-listings-numbers span { display: grid; place-items: center; min-block-size: 36px; border: 1px solid var(--line); border-radius: 7px; font-size: 11px; }
+.w-listings-numbers :checked + span { background: var(--green-dark); color: white; border-color: var(--green-dark); }
+.w-listings-numbers :focus-visible + span { outline: 3px solid var(--green-dark); outline-offset: 3px; }
+.w-listings-filter-block:disabled { opacity: .55; }
+.w-listings-filter-help { font-size: 10px; color: var(--muted); margin-block: 10px; }
+.w-listings-filter-actions { position: sticky; inset-block-end: -20px; padding-block: 12px; background: white; border-block-start: 1px solid var(--line); }
+.w-listings-filter-actions .w-button { inline-size: 100%; }
+#filter-live-count { font-size: 11px; color: var(--green-dark); margin-block-end: 8px; }
+.w-listings-clear { inline-size: 100%; border: 0; background: transparent; color: #a34c3f; font-size: 11px; font-weight: 700; padding-block-start: 14px; }
+.w-listings-results { min-inline-size: 0; }
+.w-listings-results-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-block-end: 14px; }
+.w-listings-results-head h2 { font-size: 24px; }
+.w-listings-results-head p { margin-block-start: 3px; color: var(--muted); font-size: 11px; }
+.w-listings-controls { display: flex; align-items: center; gap: 8px; }
+.w-listings-controls select { block-size: 40px; max-inline-size: 100%; padding-inline: 13px; border: 1px solid var(--line); background: white; border-radius: 9px; font: inherit; font-size: 11px; }
+.w-listings-view { display: flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+.w-listings-view button { inline-size: 40px; block-size: 40px; border: 0; background: white; color: var(--muted); }
+.w-listings-view [aria-pressed=true] { background: var(--green-dark); color: white; }
+.w-listings-applied { display: flex; flex-wrap: wrap; gap: 6px; margin-block-end: 20px; }
+.w-listings-applied button { border: 0; background: var(--green-pale); color: var(--green-dark); border-radius: 20px; padding: 6px 10px; min-block-size: 34px; font-size: 11px; }
+.w-listings-applied .w-listings-clear-chip { background: transparent; color: #a34c3f; }
+.w-listings-summary { font-size: 11px; color: var(--muted); margin-block-end: 12px; overflow-wrap: anywhere; }
+.w-listings-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.w-listings-grid[data-view=list] { grid-template-columns: 1fr; }
+.w-listings-grid[data-view=list] .w-property-card { display: grid; grid-template-columns: 265px minmax(0,1fr); }
+.w-listings-grid[data-view=list] .w-property-image { block-size: 100%; min-block-size: 220px; }
+.w-property-amenities { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 10px; color: var(--muted); margin-block-end: 12px; }
+.w-property-amenities span { display: inline-flex; align-items: center; gap: 4px; }
+.w-property-amenities .w-icon { inline-size: 15px; block-size: 15px; }
+.w-listings-pagination { margin-block-start: 35px; }
+.w-listings-pagination button { min-inline-size: 40px; min-block-size: 40px; border: 1px solid var(--line); background: white; border-radius: 9px; }
+.w-listings-pagination [aria-current=page] { background: var(--green-dark); color: white; }
+.w-listings-pagination button:disabled { opacity: .4; cursor: not-allowed; }
+.w-listings-mobile-bar { display: none; }
+.w-listings-notice { background: var(--sand); padding: 12px; border-radius: 10px; font-size: 12px; margin-block-end: 16px; }
+.w-listings-error { display: block; color: #a34c3f; font-size: 11px; overflow-wrap: anywhere; }
+#results-error { padding: 12px; background: #fbe9e5; border-radius: 10px; margin-block-end: 16px; }
+.w-listings-demo-note { color: var(--muted); font-size: 10px; margin-block-start: 24px; }
+.w-listings-filter-dialog { padding: 0; }
+@media (max-width:900px) {
+  .w-listings .w-container { inline-size: min(calc(100% - 32px),740px); }
+  .w-listings-layout { grid-template-columns: 220px minmax(0,1fr); gap: 16px; }
+  .w-listings-grid { grid-template-columns: 1fr; }
+  .w-listings-grid[data-view=list] .w-property-card { grid-template-columns: 1fr; }
+  .w-listings-search-fields { grid-template-columns: 1fr 1fr; }
+  .w-listings-results-head { align-items: start; flex-wrap: wrap; }
+}
+@media (max-width:620px) {
+  .w-listings .w-container { inline-size: calc(100% - 28px); }
+  .w-listings-hero { padding-block-start: 25px; }
+  .w-listings-hero h1 { font-size: 28px; margin-block-start: 15px; }
+  .w-listings-hero > .w-container > p { font-size: 11px; }
+  .w-listings-search { transform: translateY(25px); padding: 13px; }
+  .w-listings-search-top { flex-direction: column; align-items: stretch; }
+  .w-listings-keyword { inline-size: 100%; }
+  .w-listings-segmented button { flex: 1; }
+  .w-listings-search-fields { grid-template-columns: 1fr; }
+  .w-listings-section { padding-block-start: 50px; }
+  .w-listings-layout { display: block; }
+  #filter-desktop { display: none; }
+  .w-listings-mobile-bar { display: flex; justify-content: space-between; align-items: center; margin-block-end: 18px; font-size: 11px; }
+  .w-listings-mobile-bar .w-button { font-size: 12px; }
+  .w-listings-controls { flex-shrink: 0; }
+  .w-listings-view { display: none; }
+  .w-listings-filter-dialog { inline-size: 100%; max-inline-size: none; margin: auto 0 0; border-radius: 20px 20px 0 0; max-block-size: 88dvh; }
+  .w-listings-filter-dialog .w-listings-filters { border: 0; border-radius: 0; max-block-size: 88dvh; padding-block-end: 30px; }
+  .w-listings-close { display: inline-flex; }
+  .w-listings-filter-actions { inset-block-end: -30px; padding-block-end: 18px; }
+  .w-listings-filters .w-listings-checks label { min-block-size: 40px; font-size: 12px; }
+  .w-listings-numbers span { min-block-size: 44px; }
+}

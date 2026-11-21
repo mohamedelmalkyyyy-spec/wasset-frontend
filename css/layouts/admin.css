@@ -1,0 +1,7 @@
+.w-admin { display: grid; grid-template-columns: 270px minmax(0, 1fr); min-block-size: 100vh; background: var(--workspace); }
+.w-admin-header { padding-inline: 34px; }
+.w-admin-content { max-inline-size: 1200px; inline-size: calc(100% - 64px); margin-inline: auto; padding-block: 36px 70px; }
+.w-admin .w-table { min-inline-size: 850px; }
+@media (max-width: 1050px) { .w-admin { grid-template-columns: 230px minmax(0, 1fr); } .w-admin-content { inline-size: calc(100% - 36px); } }
+@media (max-width: 780px) { .w-admin { display: block; } .w-admin > .w-sidebar-slot { display: none; } .w-admin-header .w-sidebar-trigger { display: inline-flex; } }
+@media (max-width: 480px) { .w-admin-header { padding: 10px 13px; } .w-admin-header .w-shell-user-copy { display: none; } .w-admin-content { inline-size: calc(100% - 24px); padding-block-start: 25px; } }

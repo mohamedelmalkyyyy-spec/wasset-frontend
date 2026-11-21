@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة الإدارة | وسيط</title>
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/typography.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/layouts/account.css">
+  <link rel="stylesheet" href="../../css/layouts/admin.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/pages/admin-home.css">
+  <script type="module" src="../../js/admin/home.js?batch=9cb"></script>
+</head>
+<body>
+  <a class="w-skip" href="#main-content">انتقل إلى المحتوى</a>
+  <div data-component="components/admin/shell.html"></div>
+  <template id="admin-home-content">
+    <div class="a9-heading"><h1>لوحة الإدارة</h1><p>مرحباً بك في لوحة إدارة وسيط. إليك ملخص مهام المراجعة اليوم.</p></div>
+    <div class="a9-stats" id="admin-summary" aria-label="الملخص الإداري"></div>
+    <div class="a9-home-grid">
+      <section class="a9-panel a9-wide" id="pending" aria-labelledby="pending-title" tabindex="-1">
+        <div class="a9-panel-head"><div><h2 id="pending-title">أحدث الإعلانات المعلقة</h2><p>إعلانات تنتظر المراجعة قبل الظهور للعامة</p></div><button type="button" data-expand="listings">عرض الكل <svg class="w-icon" aria-hidden="true"><use data-icon="admin-arrow"></use></svg></button></div>
+        <div data-admin-list="listings"></div>
+      </section>
+      <section class="a9-panel" id="verification" aria-labelledby="verification-title" tabindex="-1">
+        <div class="a9-panel-head"><div><h2 id="verification-title">طلبات التوثيق</h2><p>أحدث الطلبات الواردة</p></div><button type="button" data-expand="verification">الكل</button></div>
+        <div data-admin-list="verification"></div>
+      </section>
+      <section class="a9-panel" id="reports" aria-labelledby="reports-title" tabindex="-1">
+        <div class="a9-panel-head"><div><h2 id="reports-title">أحدث البلاغات</h2><p>بلاغات تحتاج إلى إجراء</p></div><button type="button" data-expand="reports">الكل</button></div>
+        <div data-admin-list="reports"></div>
+      </section>
+    </div>
+    <p class="a9-demo-note">الإعلانات والتعديلات والتوثيق والبلاغات مرتبطة بحالة نفس التبويب. ملفات التوثيق غير متوفرة؛ المعاينات تعرض بيانات وهمية فقط. لا توجد مصادقة إدارية أو إشعارات فعلية.</p>
+  </template>
+  <dialog class="w-modal" id="admin-summary-dialog" aria-labelledby="admin-summary-title">
+    <div class="w-modal-header"><h2 id="admin-summary-title"></h2><button type="button" class="w-icon-button" data-close-dialog aria-label="إغلاق">×</button></div>
+    <div class="w-modal-body"><div id="admin-summary-copy"></div><p class="a9-demo-note">عرض تجريبي فقط. لا توجد إجراءات موافقة أو رفض في هذه الدفعة.</p><div class="w-modal-actions"><button type="button" class="w-button w-button--secondary" data-close-dialog>إغلاق</button></div></div>
+  </dialog>
+  <noscript>يلزم تفعيل جافاسكريبت لعرض الملخص الإداري.</noscript>
+</body>
+</html>

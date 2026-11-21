@@ -1,0 +1,32 @@
+.w-public-header { position: sticky; inset-block-start: 0; z-index: 50; background: rgb(252 250 247 / 94%); backdrop-filter: blur(16px); border-block-end: 1px solid var(--line); }
+.w-public-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; block-size: 82px; }
+.w-public-nav { display: flex; align-items: center; gap: 8px; }
+.w-public-nav a { position: relative; padding: 12px 10px; font-size: 14px; white-space: nowrap; }
+.w-public-nav a[aria-current] { color: var(--green-dark); font-weight: 800; }
+.w-public-nav a[aria-current]::after { content: ''; position: absolute; inset-block-end: 3px; inset-inline-start: calc(50% - 2px); inline-size: 4px; block-size: 4px; border-radius: 50%; background: var(--terracotta); }
+.w-public-actions { display: flex; gap: 6px; align-items: center; }
+.w-public-menu, .w-public-mobile { display: none; }
+.w-public-main { padding-block: 38px 70px; }
+.w-public-footer { background: #292d25; color: white; padding-block: 70px 25px; }
+.w-public-footer .w-logo { color: var(--sand); }
+.w-footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 60px; }
+.w-footer-grid p, .w-footer-grid a:not(.w-logo) { color: #d4d5d0; font-size: 12px; }
+.w-footer-grid section > a:not(.w-logo) { display: block; margin-block-start: 10px; }
+.w-footer-grid p { margin-block-start: 18px; }
+.w-footer-bottom { display: flex; justify-content: space-between; gap: 16px; border-block-start: 1px solid #ffffff25; margin-block-start: 45px; padding-block-start: 25px; font-size: 11px; }
+@media (max-width: 900px) {
+  .w-public-header-inner { block-size: 72px; }
+  .w-public-nav-desktop, .w-public-login, .w-public-favorite { display: none; }
+  .w-public-menu { display: inline-flex; }
+  .w-public-mobile { display: block; position: fixed; inset: 0; border: 0; margin: 72px 0 0; inline-size: 100%; max-inline-size: none; block-size: fit-content; max-block-size: calc(100dvh - 72px); padding: 20px 24px; background: var(--background); }
+  .w-public-mobile:not([open]) { display: none; }
+  .w-public-mobile::backdrop { background: #211f1b77; }
+  .w-public-mobile .w-public-nav { align-items: stretch; flex-direction: column; }
+  .w-footer-grid { grid-template-columns: repeat(3, 1fr); gap: 30px; }
+}
+@media (max-width: 620px) {
+  .w-public-add { display: none; }
+  .w-footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+  .w-footer-brand { grid-column: 1 / -1; }
+  .w-footer-bottom { flex-direction: column; }
+}

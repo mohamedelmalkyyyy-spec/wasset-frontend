@@ -1,0 +1,202 @@
+{
+  "description": "Original Figma source references; remote photography and Cairo are NOT locally packaged.",
+  "photographs": [
+    {
+      "source": "https://images.unsplash.com/photo-1790198576345-f1f1af9d458b?auto=format&fit=crop&w=1800&q=88",
+      "target": "https://images.unsplash.com/photo-1790198576345-f1f1af9d458b?auto=format&fit=crop&w=1800&q=88",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "target": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=1200&q=85",
+      "target": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=1200&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "target": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85",
+      "target": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85",
+      "target": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1568898670347-1d70723b65f5?auto=format&fit=crop&w=1000&q=85",
+      "target": "https://images.unsplash.com/photo-1568898670347-1d70723b65f5?auto=format&fit=crop&w=1000&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1546276933-ba48bfdf5d82?auto=format&fit=crop&w=1000&q=85",
+      "target": "https://images.unsplash.com/photo-1546276933-ba48bfdf5d82?auto=format&fit=crop&w=1000&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "target": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1729086046027-09979ade13fd?auto=format&fit=crop&w=1000&q=85",
+      "target": "https://images.unsplash.com/photo-1729086046027-09979ade13fd?auto=format&fit=crop&w=1000&q=85",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/App.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=500&q=80",
+      "target": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=500&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Dashboard.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=500&q=80",
+      "target": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=500&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Dashboard.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=500&q=80",
+      "target": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=500&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Dashboard.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=500&q=80",
+      "target": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=500&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Dashboard.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=900&q=82",
+      "target": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=900&q=82",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Admin.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=700&q=82",
+      "target": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=700&q=82",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Admin.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1729086046027-09979ade13fd?auto=format&fit=crop&w=700&q=82",
+      "target": "https://images.unsplash.com/photo-1729086046027-09979ade13fd?auto=format&fit=crop&w=700&q=82",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Admin.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=400&q=80",
+      "target": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=400&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Admin.tsx"
+      ]
+    },
+    {
+      "source": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=400&q=80",
+      "target": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=400&q=80",
+      "localPath": null,
+      "delivery": "remote",
+      "sourceFiles": [
+        "src/Admin.tsx"
+      ]
+    }
+  ],
+  "icons": {
+    "source": [
+      "src/App.tsx:Icon",
+      "src/Dashboard.tsx:DIcon",
+      "src/Admin.tsx:Icon"
+    ],
+    "target": "assets/icons/source-icons.svg",
+    "delivery": "local",
+    "symbolCount": 70
+  },
+  "font": {
+    "source": "src/index.css",
+    "url": "https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap",
+    "delivery": "remote",
+    "localPath": null,
+    "fallbacks": [
+      "Tahoma",
+      "Arial",
+      "sans-serif"
+    ]
+  },
+  "favicon": {
+    "source": "public/favicon.svg",
+    "target": null,
+    "reason": "Original Figma favicon is not Waseet branding; preserved in original location, not applied."
+  }
+}

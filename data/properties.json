@@ -1,0 +1,698 @@
+{
+  "property_categories": [
+    {
+      "id": "residential",
+      "name": "سكني",
+      "sort_order": 1
+    },
+    {
+      "id": "commercial",
+      "name": "تجاري",
+      "sort_order": 2
+    },
+    {
+      "id": "administrative",
+      "name": "إداري",
+      "sort_order": 3
+    },
+    {
+      "id": "land",
+      "name": "أراضي",
+      "sort_order": 4
+    }
+  ],
+  "property_types": [
+    {
+      "id": "apartment",
+      "category_id": "residential",
+      "name": "شقة",
+      "image_url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "id": "villa",
+      "category_id": "residential",
+      "name": "فيلا",
+      "image_url": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "id": "shop",
+      "category_id": "commercial",
+      "name": "محل تجاري",
+      "image_url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "id": "office",
+      "category_id": "administrative",
+      "name": "مكتب إداري",
+      "image_url": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85"
+    },
+    {
+      "id": "land",
+      "category_id": "land",
+      "name": "أرض",
+      "image_url": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85"
+    }
+  ],
+  "areas": [
+    {
+      "id": "distinguished",
+      "name": "الحي المتميز",
+      "is_active": true
+    },
+    {
+      "id": "first",
+      "name": "المنطقة الأولى",
+      "is_active": true
+    },
+    {
+      "id": "second",
+      "name": "المنطقة الثانية",
+      "is_active": true
+    },
+    {
+      "id": "third",
+      "name": "المنطقة الثالثة",
+      "is_active": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "owner",
+      "name": "مالك مباشر"
+    },
+    {
+      "id": "agency",
+      "name": "مكتب عقاري"
+    },
+    {
+      "id": "broker",
+      "name": "وسيط عقاري"
+    },
+    {
+      "id": "seeker",
+      "name": "باحث عن عقار"
+    },
+    {
+      "id": "agent",
+      "name": "موظف مكتب عقاري"
+    },
+    {
+      "id": "admin",
+      "name": "مشرف"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "role_id": "owner",
+      "full_name": "محمد أحمد",
+      "is_active": true,
+      "is_verified": true,
+      "email": "elmalky-owner@gmail.com",
+      "created_at": "2026-10-10T09:00:00+02:00"
+    },
+    {
+      "id": 2,
+      "role_id": "agency",
+      "full_name": "عقارات السادات",
+      "is_active": true,
+      "is_verified": false,
+      "email": "elmalky-agency@gmail.com",
+      "created_at": "2026-10-11T09:00:00+02:00"
+    },
+    {
+      "id": 3,
+      "role_id": "broker",
+      "full_name": "كريم السيد",
+      "is_active": true,
+      "is_verified": false,
+      "email": "elmalky-broker@gmail.com",
+      "created_at": "2026-10-12T09:00:00+02:00"
+    },
+    {
+      "id": 4,
+      "role_id": "seeker",
+      "email": "elmalky@gmail.com",
+      "full_name": "محمد المالكي",
+      "is_active": true,
+      "is_verified": true,
+      "created_at": "2026-10-13T09:00:00+02:00"
+    },
+    {
+      "id": 5,
+      "role_id": "agent",
+      "email": "elmalky-agent@gmail.com",
+      "full_name": "أحمد سمير",
+      "is_active": true,
+      "is_verified": false,
+      "created_at": "2026-10-14T09:00:00+02:00"
+    },
+    {
+      "id": 6,
+      "role_id": "admin",
+      "email": "elmalky-admin@gmail.com",
+      "full_name": "إدارة وسيط",
+      "is_active": true,
+      "is_verified": false,
+      "created_at": "2026-10-15T09:00:00+02:00"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "property_type_id": "apartment",
+      "area_id": "distinguished",
+      "title": "شقة للبيع في الحي المتميز",
+      "description": "شقة للبيع في الحي المتميز، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 2150000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 150,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "created_at": "2026-11-19T09:00:00+02:00",
+      "finishing_type": "سوبر لوكس",
+      "floor": 2
+    },
+    {
+      "id": 2,
+      "user_id": 2,
+      "property_type_id": "shop",
+      "area_id": "first",
+      "title": "محل تجاري للإيجار بمدينة السادات",
+      "description": "محل تجاري للإيجار بمدينة السادات، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 12000,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 65,
+      "bedrooms": null,
+      "bathrooms": null,
+      "created_at": "2026-11-18T09:00:00+02:00",
+      "finishing_type": "لوكس",
+      "floor": 0
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "property_type_id": "land",
+      "area_id": "third",
+      "title": "قطعة أرض للبيع في مدينة السادات",
+      "description": "قطعة أرض للبيع في مدينة السادات، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 1800000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 300,
+      "bedrooms": null,
+      "bathrooms": null,
+      "created_at": "2026-11-17T09:00:00+02:00",
+      "finishing_type": null,
+      "floor": 0
+    },
+    {
+      "id": 4,
+      "user_id": 3,
+      "property_type_id": "office",
+      "area_id": "second",
+      "title": "مكتب إداري للإيجار في مدينة السادات",
+      "description": "مكتب إداري للإيجار في مدينة السادات، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 8500,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 90,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "created_at": "2026-11-16T09:00:00+02:00",
+      "finishing_type": "نصف تشطيب",
+      "floor": 0
+    },
+    {
+      "id": 5,
+      "user_id": 2,
+      "property_type_id": "villa",
+      "area_id": "distinguished",
+      "title": "فيلا مستقلة بحديقة خاصة",
+      "description": "فيلا مستقلة بحديقة خاصة، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 4750000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 320,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "created_at": "2026-11-15T09:00:00+02:00",
+      "finishing_type": "سوبر لوكس",
+      "floor": 0
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "property_type_id": "apartment",
+      "area_id": "first",
+      "title": "شقة حديثة بالقرب من الخدمات",
+      "description": "شقة حديثة بالقرب من الخدمات، بمساحة مناسبة وتوزيع عملي بالقرب من الخدمات داخل مدينة السادات. البيانات والأسعار والصور أمثلة توضيحية للعرض وليست عروضاً عقارية حقيقية.",
+      "price": 6500,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 120,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "created_at": "2026-11-14T09:00:00+02:00",
+      "finishing_type": "بدون تشطيب",
+      "floor": 2
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "property_type_id": "apartment",
+      "area_id": "second",
+      "title": "شقة عائلية للبيع بالمنطقة الثانية",
+      "description": "شقة عائلية للبيع بالمنطقة الثانية، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 1850000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 145,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-07T09:00:00+02:00"
+    },
+    {
+      "id": 8,
+      "user_id": 1,
+      "property_type_id": "office",
+      "area_id": "first",
+      "title": "مكتب إداري للإيجار بالمنطقة الأولى",
+      "description": "مكتب إداري للإيجار بالمنطقة الأولى، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 9000,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 80,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "floor": null,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-08T09:00:00+02:00"
+    },
+    {
+      "id": 9,
+      "user_id": 1,
+      "property_type_id": "apartment",
+      "area_id": "third",
+      "title": "شقة للبيع بالمنطقة الثالثة",
+      "description": "شقة للبيع بالمنطقة الثالثة، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 1650000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 130,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-09T09:00:00+02:00"
+    },
+    {
+      "id": 10,
+      "user_id": 3,
+      "property_type_id": "apartment",
+      "area_id": "distinguished",
+      "title": "شقة للإيجار في الحي المتميز",
+      "description": "شقة للإيجار في الحي المتميز، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 11000,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 160,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-10T09:00:00+02:00"
+    },
+    {
+      "id": 11,
+      "user_id": 3,
+      "property_type_id": "shop",
+      "area_id": "second",
+      "title": "محل تجاري للبيع بالمنطقة الثانية",
+      "description": "محل تجاري للبيع بالمنطقة الثانية، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 2400000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 70,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "floor": null,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-11T09:00:00+02:00"
+    },
+    {
+      "id": 12,
+      "user_id": 3,
+      "property_type_id": "land",
+      "area_id": "third",
+      "title": "أرض سكنية للبيع بالمنطقة الثالثة",
+      "description": "أرض سكنية للبيع بالمنطقة الثالثة، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 2200000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 350,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "finishing_type": null,
+      "created_at": "2026-11-12T09:00:00+02:00"
+    },
+    {
+      "id": 13,
+      "user_id": 3,
+      "property_type_id": "office",
+      "area_id": "second",
+      "title": "مكتب إداري للبيع بالمنطقة الثانية",
+      "description": "مكتب إداري للبيع بالمنطقة الثانية، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 1950000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 105,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "floor": null,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-13T09:00:00+02:00"
+    },
+    {
+      "id": 14,
+      "user_id": 3,
+      "property_type_id": "apartment",
+      "area_id": "first",
+      "title": "شقة للبيع بالمنطقة الأولى",
+      "description": "شقة للبيع بالمنطقة الأولى، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 1750000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 140,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-14T09:00:00+02:00"
+    },
+    {
+      "id": 15,
+      "user_id": 2,
+      "property_type_id": "apartment",
+      "area_id": "first",
+      "title": "شقة للإيجار بالقرب من خدمات المنطقة الأولى",
+      "description": "شقة للإيجار بالقرب من خدمات المنطقة الأولى، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 7800,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 125,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-15T09:00:00+02:00"
+    },
+    {
+      "id": 16,
+      "user_id": 2,
+      "property_type_id": "shop",
+      "area_id": "distinguished",
+      "title": "محل للإيجار في الحي المتميز",
+      "description": "محل للإيجار في الحي المتميز، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 15000,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 90,
+      "bedrooms": null,
+      "bathrooms": 1,
+      "floor": null,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-16T09:00:00+02:00"
+    },
+    {
+      "id": 17,
+      "user_id": 2,
+      "property_type_id": "land",
+      "area_id": "third",
+      "title": "أرض للبيع مناسبة لبناء منزل عائلي",
+      "description": "أرض للبيع مناسبة لبناء منزل عائلي، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 2650000,
+      "listing_type": "sale",
+      "status": "published",
+      "rent_period": null,
+      "size_m2": 400,
+      "bedrooms": null,
+      "bathrooms": null,
+      "floor": null,
+      "finishing_type": null,
+      "created_at": "2026-11-17T09:00:00+02:00"
+    },
+    {
+      "id": 18,
+      "user_id": 2,
+      "property_type_id": "apartment",
+      "area_id": "second",
+      "title": "شقة للإيجار بالمنطقة الثانية",
+      "description": "شقة للإيجار بالمنطقة الثانية، بتوزيع عملي ومساحة مناسبة للاستخدام المطلوب، بالقرب من الخدمات في مدينة السادات. يمكن الاطلاع على الصور التوضيحية ومراجعة المواصفات. مثال تجريبي وليس إعلاناً حقيقياً.",
+      "price": 7200,
+      "listing_type": "rent",
+      "status": "published",
+      "rent_period": "month",
+      "size_m2": 115,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "floor": 2,
+      "finishing_type": "لوكس",
+      "created_at": "2026-11-18T09:00:00+02:00"
+    }
+  ],
+  "property_images": [
+    {
+      "id": 1,
+      "property_id": 1,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 2,
+      "property_id": 2,
+      "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 3,
+      "property_id": 3,
+      "url": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 4,
+      "property_id": 4,
+      "url": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 5,
+      "property_id": 5,
+      "url": "https://images.unsplash.com/photo-1568899380839-bba35e99fbe3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 6,
+      "property_id": 6,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 7,
+      "property_id": 1,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 8,
+      "property_id": 1,
+      "url": "https://images.unsplash.com/photo-1729086046027-09979ade13fd?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 2
+    },
+    {
+      "id": 114,
+      "property_id": 7,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 115,
+      "property_id": 7,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 116,
+      "property_id": 8,
+      "url": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 117,
+      "property_id": 8,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 118,
+      "property_id": 9,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 119,
+      "property_id": 9,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 120,
+      "property_id": 10,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 121,
+      "property_id": 10,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 122,
+      "property_id": 11,
+      "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 123,
+      "property_id": 11,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 124,
+      "property_id": 12,
+      "url": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 126,
+      "property_id": 13,
+      "url": "https://images.unsplash.com/photo-1689043528099-2ba014dd7c64?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 127,
+      "property_id": 13,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 128,
+      "property_id": 14,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 129,
+      "property_id": 14,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 130,
+      "property_id": 15,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 131,
+      "property_id": 15,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 132,
+      "property_id": 16,
+      "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 133,
+      "property_id": 16,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    },
+    {
+      "id": 134,
+      "property_id": 17,
+      "url": "https://images.unsplash.com/photo-1780303009859-c08cdf9c4f4c?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 136,
+      "property_id": 18,
+      "url": "https://images.unsplash.com/photo-1705321963943-de94bb3f0dd3?auto=format&fit=crop&w=1200&q=85",
+      "is_main": true,
+      "sort_order": 0
+    },
+    {
+      "id": 137,
+      "property_id": 18,
+      "url": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=1000&q=85",
+      "is_main": false,
+      "sort_order": 1
+    }
+  ]
+}

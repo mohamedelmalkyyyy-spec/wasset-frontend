@@ -1,0 +1,19 @@
+:root {
+  --green: #6F8B4E;
+  --green-dark: #526B38;
+  --background: #FCFAF7;
+  --sand: #F5E6D3;
+  --sand-secondary: #EAD7BE;
+  --terracotta: #C97B63;
+  --text: #2F2F2F;
+  --white: #FFFFFF;
+  --muted: #716f69;
+  --line: #e8e2d9;
+  --green-pale: #edf2e8;
+  --sidebar: #2d3528;
+  --workspace: #f8f5ef;
+  --radius: 16px;
+  --radius-small: 12px;
+  --shadow: 0 6px 24px rgb(54 46 35 / 7%);
+  --shadow-large: 0 18px 50px rgb(54 46 35 / 12%);
+}

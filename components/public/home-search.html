@@ -1,0 +1,26 @@
+<form class="w-home-search-panel" id="home-search" aria-label="البحث عن عقار" novalidate>
+  <div class="w-home-search-top">
+    <div class="w-home-segmented" role="group" aria-label="نوع المعاملة">
+      <button type="button" class="w-home-selected" data-transaction="sale" aria-pressed="true">شراء</button>
+      <button type="button" data-transaction="rent" aria-pressed="false">إيجار</button>
+    </div>
+    <span class="w-home-search-hint"><svg class="w-icon" width="17" height="17" aria-hidden="true"><use data-icon="public-location"></use></svg>البحث داخل مدينة السادات</span>
+  </div>
+  <input type="hidden" name="listing_type" value="sale">
+  <div class="w-home-search-fields">
+    <label><span>نوع العقار</span><select class="w-home-field" name="property_type_id" aria-label="نوع العقار"><option value="">كل العقارات</option></select></label>
+    <label><span>الحي أو المنطقة</span><select class="w-home-field" name="area_id" aria-label="الحي أو المنطقة"><option value="">كل المناطق</option></select></label>
+    <details class="w-home-price" id="price-range">
+      <summary><span class="w-home-price-label">نطاق السعر</span><span class="w-home-field"><span id="price-summary">أي سعر</span><svg class="w-icon" width="16" height="16" aria-hidden="true"><use data-icon="public-chevron"></use></svg></span></summary>
+      <div class="w-home-price-panel">
+        <label>السعر الأدنى (جنيه)<input class="w-home-field" type="number" name="min_price" min="0" step="1" inputmode="numeric" aria-describedby="search-error"></label>
+        <label>السعر الأقصى (جنيه)<input class="w-home-field" type="number" name="max_price" min="0" step="1" inputmode="numeric" aria-describedby="search-error"></label>
+        <button type="button" class="w-button w-button--secondary" id="apply-price">تطبيق</button>
+      </div>
+    </details>
+    <button type="submit" class="w-button w-button--primary w-home-search-submit"><svg class="w-icon" width="20" height="20" aria-hidden="true"><use data-icon="public-search"></use></svg>ابحث عن عقارك</button>
+  </div>
+  <div class="w-home-search-extra"><button type="button" class="w-home-advanced" id="advanced-search">بحث متقدم <svg class="w-icon" width="16" height="16" aria-hidden="true"><use data-icon="public-filter"></use></svg></button><small class="w-muted" id="rent-context" hidden>أسعار الإيجار الشهرية</small></div>
+  <p class="w-home-search-error" id="search-error" role="alert"></p>
+  <p class="w-home-feedback" id="search-feedback" role="status"></p>
+</form>

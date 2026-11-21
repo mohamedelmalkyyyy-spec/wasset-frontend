@@ -1,0 +1,8 @@
+// Demo review/contact evidence, not new ERD fields or a real identity/security service.
+export const VERIFICATION_KEY='waseet-verification-v1',CONTACT_KEY='waseet-contact-demo-v1';
+const emailOK=value=>typeof value==='string'&&value.length<=120&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+function object(storage,key,strict){try{const text=storage.getItem(key);if(text?.length>100000)throw Error();const data=JSON.parse(text||'{}');if(!data||typeof data!=='object'||Array.isArray(data))throw Error();return data;}catch{if(strict)throw Error('تعذّر قراءة بيانات التوثيق التجريبية. أعد المحاولة بعد مراجعة تخزين الجلسة.');return {};}}
+export function verificationDecisions(storage,strict=false){const result={};for(const [email,value]of Object.entries(object(storage,VERIFICATION_KEY,strict))){if(emailOK(email)&&['موثق','مرفوض'].includes(value?.status)&&typeof value.reason==='string'&&value.reason.length<=1000&&(value.status!=='مرفوض'||value.reason.trim()))result[email]={status:value.status,reason:value.reason};else if(strict)throw Error('بيانات قرار التوثيق غير صالحة.');}return result;}
+export function advertiserVerified(storage,email,baseline=false){const decision=verificationDecisions(storage)[email];return decision?decision.status==='موثق':baseline;}
+export function contactEvidence(storage,email){const data=object(storage,CONTACT_KEY,false);return {email:'لا توجد آلية تأكيد بريد في العرض',mobile:data[email]===true?'تمت محاكاة تأكيد الهاتف بكود العرض':'لا يوجد تأكيد هاتف مسجل'};}
+export function recordMobileDemo(storage,email){if(!emailOK(email))throw Error('الحساب غير صالح.');const data=object(storage,CONTACT_KEY,true);data[email.toLowerCase()]=true;storage.setItem(CONTACT_KEY,JSON.stringify(data));}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مراجعة الإعلان | وسيط</title>
+  <link rel="stylesheet" href="../../css/tokens.css">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/typography.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/layouts/account.css">
+  <link rel="stylesheet" href="../../css/layouts/admin.css">
+  <link rel="stylesheet" href="../../css/responsive.css">
+  <link rel="stylesheet" href="../../css/pages/admin-home.css">
+  <link rel="stylesheet" href="../../css/pages/admin-moderation.css">
+  <script type="module" src="../../js/admin/moderation.js"></script>
+</head>
+<body class="b9" data-review-page="listing"><a class="w-skip" href="#main-content">انتقل إلى المحتوى</a><div data-component="components/admin/shell.html"></div>
+ <dialog class="w-modal" id="review-dialog" aria-labelledby="decision-title"><div class="w-modal-header"><h2 id="decision-title"></h2><button type="button" class="w-icon-button" data-close-dialog aria-label="إغلاق">×</button></div><form id="decision-form" class="w-modal-body" novalidate><p id="decision-copy" class="b9-note"></p><label class="b9-field" id="reason-field">سبب الرفض<textarea name="reason" maxlength="1000" placeholder="اكتب سبباً واضحاً ومفيداً..." aria-describedby="decision-error"></textarea></label><p id="decision-error" class="b9-error" role="alert"></p><div class="w-modal-actions"><button type="button" class="admin-secondary" data-close-dialog>إلغاء</button><button type="submit" class="admin-primary" id="confirm-decision">تأكيد الإجراء</button></div></form></dialog>
+ <dialog class="w-modal" id="photos-dialog" aria-labelledby="photos-title"><div class="w-modal-header"><h2 id="photos-title">صور العقار</h2><button type="button" class="w-icon-button" data-close-dialog aria-label="إغلاق">×</button></div><div class="w-modal-body b9-gallery-all" id="all-photos"></div></dialog><noscript>يلزم تفعيل جافاسكريبت لعرض طلبات المراجعة.</noscript></body></html>

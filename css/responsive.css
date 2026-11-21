@@ -1,0 +1,12 @@
+@media (max-width: 620px) {
+  .w-container { inline-size: calc(100% - 28px); }
+  h1 { font-size: 24px; }
+  .w-logo-name { font-size: 22px; }
+  .w-logo-mark { inline-size: 34px; block-size: 38px; }
+  .w-logo-mark::before { inset-inline-start: 8px; }
+  .w-logo-mark::after { inset-inline-start: 6px; }
+}
+@media (max-width: 600px) {
+  .w-modal { inline-size: 100%; max-inline-size: none; margin: auto 0 0; max-block-size: 92dvh; border-radius: 20px 20px 0 0; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }

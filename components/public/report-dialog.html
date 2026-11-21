@@ -1,0 +1,9 @@
+<dialog class="w-modal" id="property-report-dialog" aria-labelledby="property-report-title">
+  <div class="w-modal-header"><h2 id="property-report-title">الإبلاغ عن الإعلان</h2><button type="button" class="w-icon-button" data-close-dialog aria-label="إغلاق البلاغ">×</button></div>
+  <form class="w-modal-body r-report-form" id="property-report-form" novalidate>
+    <p class="w-muted">بلاغ تجريبي يُحفظ في هذا التبويب لمراجعة الإدارة. لا توجد رسائل أو إشعارات فعلية.</p>
+    <div id="report-fields"><label class="w-field">سبب البلاغ<select name="category" required aria-describedby="property-report-error"></select></label><label class="w-field">توضيح البلاغ<textarea name="description" maxlength="2000" rows="4" placeholder="اكتب التفاصيل المتاحة، دون بيانات شخصية حساسة..." aria-describedby="property-report-error"></textarea></label></div>
+    <p id="property-report-error" role="alert"></p><p id="property-report-status" role="status"></p>
+    <div class="w-modal-actions"><button type="button" class="w-button w-button--secondary" data-close-dialog>إغلاق</button><button type="submit" class="w-button w-button--primary" id="submit-property-report">إرسال البلاغ</button></div>
+  </form>
+</dialog>
